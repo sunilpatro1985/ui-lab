@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QA Sandbox — Automation Testing Ground</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">QA</div>
+      <div>
+        <div class="brand-name">QA Sandbox</div>
+        <div class="brand-sub">automation testing ground</div>
+      </div>
+    </div>
+    <nav class="mainnav" id="mainnav">
+      <a href="#/" data-testid="nav-home" data-route="/"><span class="num">01</span> Home</a>
+      <a href="#/elements" data-testid="nav-elements" data-route="/elements"><span class="num">02</span> Elements</a>
+      <a href="#/forms" data-testid="nav-forms" data-route="/forms"><span class="num">03</span> Registration</a>
+      <a href="#/login" data-testid="nav-login" data-route="/login"><span class="num">04</span> Login</a>
+      <a href="#/table" data-testid="nav-table" data-route="/table"><span class="num">05</span> Data Table</a>
+      <a href="#/dynamic" data-testid="nav-dynamic" data-route="/dynamic"><span class="num">06</span> Dynamic &amp; Alerts</a>
+      <a href="#/windows" data-testid="nav-windows" data-route="/windows"><span class="num">08</span> Windows &amp; Tabs</a>
+      <a href="#/dashboard" data-testid="nav-dashboard" data-route="/dashboard"><span class="num">07</span> Dashboard</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="session-pill" id="sessionPill" data-testid="session-status">
+        <span>session</span>
+        <span class="dot"></span>
+      </div>
+      <div style="margin-top:10px;">
+        <button class="ghost small" style="width:100%;" data-testid="btn-reset-app" id="btnResetApp">Reset app state</button>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div id="app-content" data-testid="app-content"></div>
+  </main>
+</div>
+
+<!-- global modal overlay, shared by any page that wants to open it -->
+<div class="modal-overlay" id="modalOverlay" data-testid="modal-overlay">
+  <div class="modal-box" data-testid="modal-box">
+    <h3 style="margin-top:0;">Modal dialog</h3>
+    <p style="font-size:13px;color:var(--text-dim);">This is a standard modal overlay, useful for practicing focus-trapping and z-index waits.</p>
+    <button class="primary" id="btnCloseModal" data-testid="btn-close-modal">Close</button>
+  </div>
+</div>
+
+<div id="toast-container" data-testid="toast-container"></div>
+
+<!-- Load order matters: utilities/state/data/router first, then every
+     page module, then main.js which registers routes and boots the app. -->
+<script src="js/utils.js"></script>
+<script src="js/state.js"></script>
+<script src="js/data.js"></script>
+<script src="js/router.js"></script>
+<script src="js/pages/home.js"></script>
+<script src="js/pages/elements.js"></script>
+<script src="js/pages/forms.js"></script>
+<script src="js/pages/login.js"></script>
+<script src="js/pages/table.js"></script>
+<script src="js/pages/dynamic.js"></script>
+<script src="js/pages/windows.js"></script>
+<script src="js/pages/dashboard.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
