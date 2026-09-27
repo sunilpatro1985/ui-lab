@@ -15,6 +15,7 @@ QA.pages.home = (function () {
         card('Data table', '57 mock records, sortable columns, search, and full pagination.', '/table', 'home-link-table') +
         card('Dynamic &amp; alerts', 'Spinners, delayed DOM insertion, native alert/confirm/prompt, toasts.', '/dynamic', 'home-link-dynamic') +
         card('Windows &amp; tabs', 'Open new windows/tabs from links and buttons, single or many at once.', '/windows', 'home-link-windows') +
+        card('iFrames &amp; Shadow DOM', 'Single and nested iframes, open/closed shadow roots, and combinations of the two.', '/frames', 'home-link-frames') +
         card('Dashboard', 'Protected-style page reachable only after a successful login.', '/dashboard', 'home-link-dashboard') +
       '</div>'
     );

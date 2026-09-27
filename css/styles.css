@@ -12,6 +12,20 @@
   --mono:'JetBrains Mono', ui-monospace, monospace;
   --sans:'Inter', system-ui, sans-serif;
 }
+/* Light variant of the same palette, used when the sidebar theme toggle
+ * is switched to "light" (data-theme="light" on <html>). */
+:root[data-theme="light"]{
+  --bg:#F4F6FB;
+  --surface:#FFFFFF;
+  --surface-2:#EDF0F7;
+  --border:#D8DEEA;
+  --text:#1B2333;
+  --text-dim:#5B6579;
+  --amber:#C9791A;
+  --amber-dim:#E7C79A;
+  --teal:#0FA394;
+  --red:#D13B54;
+}
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
 body{
@@ -20,8 +34,9 @@ body{
     radial-gradient(ellipse 700px 500px at -10% 20%, rgba(45,212,191,0.08), transparent),
     var(--bg);
   color:var(--text);
-  font-family:var(--mono);
+  font-family:var(--sans);
   min-height:100vh;
+  transition:background .15s ease,color .15s ease;
 }
 a{color:var(--teal);}
 .specimen-tag{
@@ -71,6 +86,13 @@ nav.mainnav a.active{
   border-left:2px solid var(--amber);
 }
 .sidebar-footer{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);}
+.theme-toggle{
+  width:100%;display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:11px;color:var(--text-dim);
+  padding:8px 10px;background:var(--surface-2);border-radius:6px;
+  margin-bottom:10px;
+}
+.theme-toggle:hover{color:var(--amber);border-color:var(--amber-dim);}
 .session-pill{
   font-family:var(--mono);font-size:11px;color:var(--text-dim);
   padding:8px 10px;background:var(--surface-2);border-radius:6px;
