@@ -1,37 +1,37 @@
 :root{
-  --bg:#0B1220;
-  --surface:#121B2E;
-  --surface-2:#182338;
-  --border:#243046;
-  --text:#E7ECF6;
-  --text-dim:#8C9BB8;
-  --amber:#F5A623;
-  --amber-dim:#7A5518;
-  --teal:#2DD4BF;
-  --red:#F0556B;
+  --bg:#12141A;
+  --surface:#1A1D24;
+  --surface-2:#21252E;
+  --border:#2E323C;
+  --text:#E4E6EB;
+  --text-dim:#9AA0AC;
+  --amber:#E8A33D;
+  --amber-dim:#8C6B2E;
+  --teal:#34C6A6;
+  --red:#E15668;
   --mono:'JetBrains Mono', ui-monospace, monospace;
   --sans:'Inter', system-ui, sans-serif;
 }
 /* Light variant of the same palette, used when the sidebar theme toggle
  * is switched to "light" (data-theme="light" on <html>). */
 :root[data-theme="light"]{
-  --bg:#F4F6FB;
+  --bg:#F5F6F8;
   --surface:#FFFFFF;
-  --surface-2:#EDF0F7;
-  --border:#D8DEEA;
-  --text:#1B2333;
-  --text-dim:#5B6579;
-  --amber:#C9791A;
-  --amber-dim:#E7C79A;
-  --teal:#0FA394;
-  --red:#D13B54;
+  --surface-2:#ECEEF2;
+  --border:#DADDE3;
+  --text:#1E2127;
+  --text-dim:#646B78;
+  --amber:#B87A1F;
+  --amber-dim:#E3C596;
+  --teal:#0FA087;
+  --red:#C8394F;
 }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
 body{
   background:
-    radial-gradient(ellipse 900px 500px at 85% -10%, rgba(245,166,35,0.10), transparent),
-    radial-gradient(ellipse 700px 500px at -10% 20%, rgba(45,212,191,0.08), transparent),
+    radial-gradient(ellipse 900px 500px at 85% -10%, rgba(232,163,61,0.07), transparent),
+    radial-gradient(ellipse 700px 500px at -10% 20%, rgba(52,198,166,0.06), transparent),
     var(--bg);
   color:var(--text);
   font-family:var(--sans);
