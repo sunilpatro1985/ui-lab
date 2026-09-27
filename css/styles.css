@@ -11,6 +11,10 @@
   --red:#E15668;
   --mono:'JetBrains Mono', ui-monospace, monospace;
   --sans:'Inter', system-ui, sans-serif;
+  /* Tells the browser which native chrome (scrollbars, form control
+   * theming) to draw. Without this it defaults to light-only, which is
+   * why scrollbars can render light even while the page is dark. */
+  color-scheme:dark;
 }
 /* Light variant of the same palette, used when the sidebar theme toggle
  * is switched to "light" (data-theme="light" on <html>). */
@@ -25,9 +29,17 @@
   --amber-dim:#E3C596;
   --teal:#0FA087;
   --red:#C8394F;
+  color-scheme:light;
 }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
+/* Firefox scrollbar theming (thumb, track); WebKit/Chromium/Edge use the
+ * ::-webkit-scrollbar rules below instead. */
+*{scrollbar-color:var(--border) var(--surface-2);scrollbar-width:thin;}
+*::-webkit-scrollbar{width:11px;height:11px;}
+*::-webkit-scrollbar-track{background:var(--surface-2);}
+*::-webkit-scrollbar-thumb{background:var(--border);border-radius:20px;border:2px solid var(--surface-2);}
+*::-webkit-scrollbar-thumb:hover{background:var(--amber-dim);}
 body{
   background:
     radial-gradient(ellipse 900px 500px at 85% -10%, rgba(232,163,61,0.07), transparent),
