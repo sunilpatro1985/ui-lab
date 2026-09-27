@@ -31,6 +31,10 @@
         <div class="brand-sub">automation testing ground</div>
       </div>
     </div>
+    <div class="sidebar-search">
+      <input type="text" id="globalSearchInput" data-testid="global-search-input" placeholder="Search the sandbox…" autocomplete="off">
+      <div class="search-results" id="globalSearchResults" data-testid="global-search-results" role="listbox"></div>
+    </div>
     <nav class="mainnav" id="mainnav">
       <a href="#/" data-testid="nav-home" data-route="/"><span class="num">01</span> Home</a>
       <a href="#/elements" data-testid="nav-elements" data-route="/elements"><span class="num">02</span> Elements</a>
@@ -40,6 +44,9 @@
       <a href="#/dynamic" data-testid="nav-dynamic" data-route="/dynamic"><span class="num">06</span> Dynamic &amp; Alerts</a>
       <a href="#/windows" data-testid="nav-windows" data-route="/windows"><span class="num">08</span> Windows &amp; Tabs</a>
       <a href="#/frames" data-testid="nav-frames" data-route="/frames"><span class="num">09</span> iFrames &amp; Shadow DOM</a>
+      <a href="#/broken" data-testid="nav-broken" data-route="/broken"><span class="num">10</span> Broken Images &amp; Links</a>
+      <a href="#/menu" data-testid="nav-menu" data-route="/menu"><span class="num">11</span> Menu Bar</a>
+      <a href="#/scroll" data-testid="nav-scroll" data-route="/scroll"><span class="num">12</span> Scrolling</a>
       <a href="#/dashboard" data-testid="nav-dashboard" data-route="/dashboard"><span class="num">07</span> Dashboard</a>
     </nav>
     <div class="sidebar-footer">
@@ -77,6 +84,7 @@
 <script src="js/utils.js"></script>
 <script src="js/state.js"></script>
 <script src="js/data.js"></script>
+<script src="js/searchIndex.js"></script>
 <script src="js/router.js"></script>
 <script src="js/pages/home.js"></script>
 <script src="js/pages/elements.js"></script>
@@ -86,6 +94,9 @@
 <script src="js/pages/dynamic.js"></script>
 <script src="js/pages/windows.js"></script>
 <script src="js/pages/frames.js"></script>
+<script src="js/pages/broken.js"></script>
+<script src="js/pages/menubar.js"></script>
+<script src="js/pages/scrolling.js"></script>
 <script src="js/pages/dashboard.js"></script>
 <script src="js/main.js"></script>
 </body>

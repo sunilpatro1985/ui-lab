@@ -17,7 +17,7 @@ QA.pages.elements = (function () {
       '<div class="card"><h3>Buttons</h3><div class="btn-row">' +
         '<div><button class="primary" id="btnPrimary" data-testid="btn-primary">Click me</button><div class="specimen-tag">data-testid="btn-primary"</div></div>' +
         '<div><button disabled id="btnDisabled" data-testid="btn-disabled">Disabled</button><div class="specimen-tag">data-testid="btn-disabled"</div></div>' +
-      '</div><p style="margin-top:12px;font-size:12.5px;color:var(--text-dim);">Clicks: <span id="clickCount" data-testid="click-count">0</span></p></div>' +
+      '</div><p style="margin-top:12px;font-size:13.5px;color:var(--text-dim);">Clicks: <span id="clickCount" data-testid="click-count">0</span></p></div>' +
 
       '<div class="card"><h3>Checkbox &amp; radio</h3>' +
         '<div class="checkbox-row"><input type="checkbox" id="chkSubscribe" data-testid="chk-subscribe"><label for="chkSubscribe">Subscribe to updates</label></div>' +
@@ -78,8 +78,8 @@ QA.pages.elements = (function () {
       '<div class="card"><h3>Modal dialog</h3><button class="primary" id="btnOpenModal" data-testid="btn-open-modal">Open modal</button><div class="specimen-tag">data-testid="btn-open-modal"</div></div>' +
 
       '<div class="card"><h3>Links &amp; iframe</h3>' +
-        '<p style="font-size:13px;"><a href="#/dashboard" data-testid="link-internal">Internal link &rarr; dashboard</a></p>' +
-        '<p style="font-size:13px;"><a href="https://example.com" target="_blank" rel="noopener" data-testid="link-external">External link (opens new tab)</a></p>' +
+        '<p style="font-size:14px;"><a href="#/dashboard" data-testid="link-internal">Internal link &rarr; dashboard</a></p>' +
+        '<p style="font-size:14px;"><a href="https://example.com" target="_blank" rel="noopener" data-testid="link-external">External link (opens new tab)</a></p>' +
         '<iframe class="demo-frame" data-testid="iframe-demo" srcdoc="<body style=\'font-family:sans-serif;color:#333;padding:10px;\'>Content inside an iframe</body>"></iframe></div>' +
 
       '<div class="card"><h3>Live-updating counter</h3><p class="card-help">Useful for practicing waits on values that change on their own.</p>' +

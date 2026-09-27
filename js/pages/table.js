@@ -26,7 +26,7 @@ QA.pages.table = (function () {
         '<th data-sort="status" data-testid="th-sort-status">Status</th>' +
       '</tr></thead><tbody id="tableBody" data-testid="table-body"></tbody></table>' +
       '<div class="pagination" id="pagination" data-testid="pagination"></div>' +
-      '<p style="text-align:center;font-size:11.5px;color:var(--text-dim);margin-top:10px;font-family:var(--mono);" id="currentPageLabel" data-testid="current-page-label"></p>' +
+      '<p style="text-align:center;font-size:14px;color:var(--text-dim);margin-top:10px;font-family:var(--mono);" id="currentPageLabel" data-testid="current-page-label"></p>' +
     '</div>';
   }
 

@@ -13,7 +13,7 @@ QA.pages.dashboard = (function () {
     (loggedIn ?
       ('<div class="success-banner show" data-testid="dashboard-welcome">Welcome back, <span id="dashboardUsername" data-testid="dashboard-username">' + QA.state.getUsername() + '</span>! You\'re logged in.</div>' +
       '<div class="card"><h3>Session details</h3>' +
-      '<p style="font-size:13px;color:var(--text-dim);">Logged in at <span id="loginTimestamp" data-testid="login-timestamp">' + QA.state.getLoginTime() + '</span></p>' +
+      '<p style="font-size:14px;color:var(--text-dim);">Logged in at <span id="loginTimestamp" data-testid="login-timestamp">' + QA.state.getLoginTime() + '</span></p>' +
       '<button class="danger" id="btnLogout" data-testid="btn-logout">Log out</button></div>')
       :
       '<div data-testid="dashboard-logged-out"><p class="page-desc">You\'re not logged in yet. <a href="#/login" data-testid="dashboard-login-link">Go to login &rarr;</a></p></div>'

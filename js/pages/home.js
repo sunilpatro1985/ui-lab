@@ -16,6 +16,9 @@ QA.pages.home = (function () {
         card('Dynamic &amp; alerts', 'Spinners, delayed DOM insertion, native alert/confirm/prompt, toasts.', '/dynamic', 'home-link-dynamic') +
         card('Windows &amp; tabs', 'Open new windows/tabs from links and buttons, single or many at once.', '/windows', 'home-link-windows') +
         card('iFrames &amp; Shadow DOM', 'Single and nested iframes, open/closed shadow roots, and combinations of the two.', '/frames', 'home-link-frames') +
+        card('Broken images &amp; links', 'Phone-model product images and links, some working and some deliberately broken.', '/broken', 'home-link-broken') +
+        card('Menu bar', 'A desktop-style menu bar with hover-triggered dropdowns and nested flyout submenus.', '/menu', 'home-link-menu') +
+        card('Scrolling', 'A plain scroll container, a manual load-more button, and true infinite scroll.', '/scroll', 'home-link-scroll') +
         card('Dashboard', 'Protected-style page reachable only after a successful login.', '/dashboard', 'home-link-dashboard') +
       '</div>'
     );

@@ -48,7 +48,7 @@ QA.pages.forms = (function () {
     '</form>' +
     '<div class="card" id="registrationSummaryCard" data-testid="registration-summary" style="display:none;">' +
       '<h3>Submitted data</h3>' +
-      '<pre id="registrationSummaryText" data-testid="registration-summary-text" style="white-space:pre-wrap;font-family:var(--mono);font-size:12px;color:var(--text-dim);"></pre>' +
+      '<pre id="registrationSummaryText" data-testid="registration-summary-text" style="white-space:pre-wrap;font-family:var(--mono);font-size:14px;color:var(--text-dim);"></pre>' +
     '</div>';
   }
 

@@ -24,7 +24,7 @@ QA.pages.login = (function () {
       '</div></div>' +
       '<div class="checkbox-row"><input type="checkbox" id="loginRemember" data-testid="chk-remember"><label for="loginRemember">Remember me</label></div>' +
       '<div class="btn-row" style="margin-top:10px;"><button type="submit" class="primary" id="btnLogin" data-testid="btn-login">Log in</button></div>' +
-      '<p style="font-size:11.5px;color:var(--text-dim);margin-top:12px;font-family:var(--mono);">attempts used: <span id="attemptCount" data-testid="login-attempt-count">' + attempts + '</span> / ' + max + '</p>' +
+      '<p style="font-size:14px;color:var(--text-dim);margin-top:12px;font-family:var(--mono);">attempts used: <span id="attemptCount" data-testid="login-attempt-count">' + attempts + '</span> / ' + max + '</p>' +
     '</form>';
   }
 
